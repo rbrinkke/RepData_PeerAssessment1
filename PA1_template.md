@@ -66,7 +66,7 @@ ggplot(activity_total_steps, aes(x = total_steps))  +
 ggplot(activity_total_steps, aes(date,total_steps)) + 
     geom_bar(aes(y=total_steps), stat="identity", position="identity",fill="blue") + 
     labs(x="Date" , y="Total steps" , title="TYPE 2 Total steps by day") +
-    scale_x_date(date_breaks='1 days')  +
+    scale_x_date(date_breaks='2 days')  +
     theme(axis.text.x=element_text(angle=90, size=8)) 
 ```
 
@@ -80,8 +80,8 @@ mean_total_steps <- round(mean(activity_total_steps$total_steps))
 median_total_steps <- median(activity_total_steps$total_steps) 
 ```
 
-+ The mean totalsteps a day is    **: 10766 **
-+ The median of the total step is **: 10765 **
++ The mean totalsteps a day is    : 10766 
++ The median of the total step is : 10765 
   
     
 
@@ -180,7 +180,7 @@ ggplot(activity_total_steps_clean, aes(x = total_steps))  +
 ggplot(activity_total_steps_clean, aes(date,total_steps)) + 
   geom_bar(aes(y=total_steps), stat="identity", position="identity",fill="blue") + 
   labs(x="Date" , y="Total steps" , title="TYPE 2 Total steps by day") +
-   scale_x_date(date_breaks='1 days') +
+   scale_x_date(date_breaks='2 days') +
    theme(axis.text.x=element_text(angle=90, size=8)) 
 ```
 
